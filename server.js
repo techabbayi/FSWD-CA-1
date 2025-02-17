@@ -31,11 +31,7 @@ app.get('/Signup', (req, res) => {
         }
     }
 
-    if (dob) {
-        if (!dob.length = 8) {
-            return res.send("DOB is not correct");
-        }
-    }
+
 
     res.send("Signup Successfully");
 });
