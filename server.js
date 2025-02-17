@@ -3,6 +3,10 @@ const app = express();
 const PORT = 3000;
 
 
+app.get('/', (req, res) => {
+    res.send("Hey, This Kalvium Home Page, add signup endpoint to Signup");
+})
+
 app.get('/Signup', (req, res) => {
     const { UserName, Password, email } = req.query;
     
